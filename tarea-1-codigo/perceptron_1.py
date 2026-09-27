@@ -132,6 +132,11 @@ def pedir_pesos(n_columnas):
 def pedir_activacion():
     """Pide al usuario que escoja una funcion de activacion."""
     print("\n--- Funcion de activacion ---")
+    print("IMPORTANTE: La función debe coincidir con el formato de salida de sus datos.")
+    print(" - Use 'Escalon (0/1)' si los valores esperados en su dataset son 0 y 1.")
+    print(" - Use 'Signo (-1/1)' si los valores esperados en su dataset son -1 y 1.")
+    print("Si usa la función incorrecta (ej. datos de 0/1 con función de Signo), el perceptrón no acertará las predicciones.\n")
+    
     for clave, (nombre, _) in ACTIVACIONES.items():
         print(f"  {clave}) {nombre}")
     while True:
@@ -179,19 +184,26 @@ def coordenadas_para_graficar(entradas):
             ys.append(0)
     return xs, ys
 
-def graficar_resultados(entradas, esperados, predicciones):
+def graficar_resultados(entradas, esperados, predicciones, nombre_activacion):
     """
-    Crea 3 graficos de dispersion (scatter) con leyendas descriptivas.
+    Crea 3 graficos de dispersion (scatter) con leyendas descriptivas
+    que se adaptan a la función de activación elegida.
     """
     xs, ys = coordenadas_para_graficar(entradas)
 
     fig, ejes = plt.subplots(1, 3, figsize=(15, 5))
 
-    # --- Elementos visuales para las leyendas ---
-    # En el mapa de color "coolwarm", el 0 tiende a azul y el 1 a rojo.
+    # --- Elementos visuales para las leyendas dinámicas ---
+    if "Signo" in nombre_activacion:
+        label_azul = 'Clase -1 (Azul)'
+        label_rojo = 'Clase 1 (Rojo)'
+    else:
+        label_azul = 'Clase 0 (Azul)'
+        label_rojo = 'Clase 1 (Rojo)'
+
     leyenda_clases = [
-        Line2D([0], [0], marker='o', color='w', markerfacecolor='#4575b4', markersize=10, label='Clase 0 (Azul)'),
-        Line2D([0], [0], marker='o', color='w', markerfacecolor='#d73027', markersize=10, label='Clase 1 (Rojo)')
+        Line2D([0], [0], marker='o', color='w', markerfacecolor='#4575b4', markersize=10, label=label_azul),
+        Line2D([0], [0], marker='o', color='w', markerfacecolor='#d73027', markersize=10, label=label_rojo)
     ]
     leyenda_coincidencias = [
         Line2D([0], [0], marker='o', color='w', markerfacecolor='green', markersize=10, label='Acierto (Verde)'),
@@ -227,9 +239,7 @@ def graficar_resultados(entradas, esperados, predicciones):
     ejes[2].legend(handles=leyenda_coincidencias, loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=2)
 
     plt.tight_layout()
-    plt.show()
-    
-    
+    plt.show()    
 # ---------------------------------------------------------------------------
 # Procedimiento principal
 # ---------------------------------------------------------------------------
@@ -252,13 +262,24 @@ def imprimir_tabla(entradas, esperados, predicciones):
 
 def main():
     print("=== Perceptrón - Tarea 1 ===\n")
+    print("=" * 65)
+    print("           SIMULADOR BÁSICO DE PERCEPTRÓN - TAREA 1")
+    print("=" * 65)
+    print("Daniela Zambrano C.I: 30956881\n")
+    print("Este programa implementa un perceptrón de una sola capa.")
+    print("Permite evaluar un conjunto de datos (cargado desde un archivo CSV)")
+    print("utilizando diferentes pesos, un sesgo (bias) y la función de")
+    print("activación que mejor se adapte a su tipo de datos (Escalón o Signo).")
+    print("Al finalizar, se mostrará una tabla de aciertos y una representación")
+    print("gráfica de los resultados esperados frente a las predicciones.")
+    print("-" * 65 + "\n")
 
     ruta = input("Ingrese la ruta del archivo CSV: ").strip()
     entradas, esperados = cargar_csv(ruta)
 
     n_columnas = len(entradas[0])  # n-1 columnas de entrada
     print(f"\nSe cargaron {len(entradas)} vectores con {n_columnas} "
-          f"columna(s) de entrada cada uno.")
+        f"columna(s) de entrada cada uno.")
 
     seguir = True
     while seguir:
@@ -275,7 +296,7 @@ def main():
 
         imprimir_tabla(entradas, esperados, predicciones)
         
-        graficar_resultados(entradas, esperados, predicciones)
+        graficar_resultados(entradas, esperados, predicciones, nombre_activacion)
 
         respuesta = input("\nDesea probar con otros pesos? (s/n): ").strip().lower()
         seguir = respuesta == "s"
