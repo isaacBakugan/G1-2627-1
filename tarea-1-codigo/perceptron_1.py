@@ -85,20 +85,20 @@ def activacion_escalon(z):
         return 0
 
 
-def activacion_signo(z):
+def activacion_sigmoide(z):
     """
-    Funcion signo (sign function).
-    Retorna 1 si z >= 0, -1 en caso contrario.
+    Funcion sigmoide: 1 / (1 + e^(-z)).
+    Su salida esta entre 0 y 1; se convierte a clase con umbral 0.5
+    (retorna 1 si sigmoide(z) >= 0.5, 0 en caso contrario).
     """
-    if z >= 0:
-        return 1
-    else:
-        return -1
+    if z < -700:  # evita desbordamiento al calcular e^(-z)
+        return 0.0
+    return 1 / (1 + 2.718281828459045 ** (-z))
 
 
 ACTIVACIONES = {
     "1": ("Escalon (0/1)", activacion_escalon),
-    "2": ("Signo (-1/1)", activacion_signo),
+    "2": ("Sigmoide (0/1)", activacion_sigmoide),
 }
 
 
@@ -132,18 +132,17 @@ def pedir_pesos(n_columnas):
 def pedir_activacion():
     """Pide al usuario que escoja una funcion de activacion."""
     print("\n--- Funcion de activacion ---")
-    print("IMPORTANTE: La función debe coincidir con el formato de salida de sus datos.")
-    print(" - Use 'Escalon (0/1)' si los valores esperados en su dataset son 0 y 1.")
-    print(" - Use 'Signo (-1/1)' si los valores esperados en su dataset son -1 y 1.")
-    print("Si usa la función incorrecta (ej. datos de 0/1 con función de Signo), el perceptrón no acertará las predicciones.\n")
-    
+
     for clave, (nombre, _) in ACTIVACIONES.items():
         print(f"  {clave}) {nombre}")
     while True:
         opcion = input("Escoja una opcion: ").strip()
         if opcion in ACTIVACIONES:
             nombre, funcion = ACTIVACIONES[opcion]
-            return nombre, funcion
+            umbral = 0.5 # valor por defecto
+            if nombre == "Sigmoide":
+                umbral = pedir_float("Ingrese el nivel de umbral (ej: 0.5 para clasificar): ")
+            return nombre, funcion, umbral
         print("  -> Opcion invalida, intente de nuevo.")
 
 
@@ -151,17 +150,26 @@ def pedir_activacion():
 # Prediccion
 # ---------------------------------------------------------------------------
 
-def predecir_todo(entradas, pesos, sesgo, funcion_activacion):
+def predecir_todo(entradas, pesos, sesgo, funcion_activacion, nombre_activacion, umbral):
     """
-    Aplica el perceptron a cada vector de entrada.
-    Retorna una lista con la salida predicha para cada vector.
+    Retorna dos listas: 
+    - valores_crudos: las probabilidades (para Sigmoide) o 0/1 (para escalón).
+    - clases_predichas: las clasificaciones finales (0 o 1) aplicando el umbral.
     """
-    predicciones = []
+    valores_crudos = []
+    clases_predichas = []
+    
     for entrada in entradas:
         z = funcion_suma(entrada, pesos, sesgo)
-        y_pred = funcion_activacion(z)
-        predicciones.append(y_pred)
-    return predicciones
+        val = funcion_activacion(z)
+        valores_crudos.append(val)
+        
+        if nombre_activacion == "Sigmoide":
+            clases_predichas.append(1 if val >= umbral else 0)
+        else:
+            clases_predichas.append(val)
+            
+    return valores_crudos, clases_predichas
 
 
 # ---------------------------------------------------------------------------
@@ -171,8 +179,6 @@ def predecir_todo(entradas, pesos, sesgo, funcion_activacion):
 def coordenadas_para_graficar(entradas):
     """
     Retorna las coordenadas (x, y) a usar en los graficos.
-    Si hay mas de 2 dimensiones de entrada, solo se usan las primeras 2.
-    Si solo hay 1 dimension, se usa esa como x y 0 como y.
     """
     xs = []
     ys = []
@@ -184,26 +190,17 @@ def coordenadas_para_graficar(entradas):
             ys.append(0)
     return xs, ys
 
-def graficar_resultados(entradas, esperados, predicciones, nombre_activacion):
+def graficar_resultados(entradas, esperados, valores_crudos, clases_predichas, nombre_activacion, umbral):
     """
-    Crea 3 graficos de dispersion (scatter) con leyendas descriptivas
-    que se adaptan a la función de activación elegida.
+    Crea 3 graficos de dispersion con leyendas descriptivas adaptadas.
     """
     xs, ys = coordenadas_para_graficar(entradas)
 
     fig, ejes = plt.subplots(1, 3, figsize=(15, 5))
 
-    # --- Elementos visuales para las leyendas dinámicas ---
-    if "Signo" in nombre_activacion:
-        label_azul = 'Clase -1 (Azul)'
-        label_rojo = 'Clase 1 (Rojo)'
-    else:
-        label_azul = 'Clase 0 (Azul)'
-        label_rojo = 'Clase 1 (Rojo)'
-
-    leyenda_clases = [
-        Line2D([0], [0], marker='o', color='w', markerfacecolor='#4575b4', markersize=10, label=label_azul),
-        Line2D([0], [0], marker='o', color='w', markerfacecolor='#d73027', markersize=10, label=label_rojo)
+    leyenda_clases_esperadas = [
+        Line2D([0], [0], marker='o', color='w', markerfacecolor='#4575b4', markersize=10, label='Clase 0 (Azul)'),
+        Line2D([0], [0], marker='o', color='w', markerfacecolor='#d73027', markersize=10, label='Clase 1 (Rojo)')
     ]
     leyenda_coincidencias = [
         Line2D([0], [0], marker='o', color='w', markerfacecolor='green', markersize=10, label='Acierto (Verde)'),
@@ -211,54 +208,64 @@ def graficar_resultados(entradas, esperados, predicciones, nombre_activacion):
     ]
 
     # Grafico 1: valor esperado
-    ejes[0].scatter(xs, ys, c=esperados, cmap="coolwarm", s=50)
-    ejes[0].set_title("Valor esperado")
+    ejes[0].scatter(xs, ys, c=esperados, cmap="coolwarm", s=50, vmin=0, vmax=1)
+    ejes[0].set_title("Valor esperado (Real)")
     ejes[0].set_xlabel("x1")
     ejes[0].set_ylabel("x2")
-    ejes[0].legend(handles=leyenda_clases, loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=2)
+    ejes[0].legend(handles=leyenda_clases_esperadas, loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=2)
 
-    # Grafico 2: valor predicho
-    ejes[1].scatter(xs, ys, c=predicciones, cmap="coolwarm", s=50)
-    ejes[1].set_title("Valor predicho")
+    # Grafico 2: valor predicho (Probabilidades o Clases)
+    ejes[1].scatter(xs, ys, c=valores_crudos, cmap="coolwarm", s=50, vmin=0, vmax=1)
+    
+    if nombre_activacion == "Sigmoide":
+        ejes[1].set_title(f"Probabilidades (Umbral: {umbral})")
+        leyenda_prediccion = [
+            Line2D([0], [0], marker='o', color='w', markerfacecolor='#4575b4', markersize=10, label='Tendencia a Clase 0'),
+            Line2D([0], [0], marker='o', color='w', markerfacecolor='#d73027', markersize=10, label='Tendencia a Clase 1')
+        ]
+    else:
+        ejes[1].set_title("Clasificación del Perceptrón")
+        leyenda_prediccion = leyenda_clases_esperadas
+
     ejes[1].set_xlabel("x1")
     ejes[1].set_ylabel("x2")
-    ejes[1].legend(handles=leyenda_clases, loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=2)
+    ejes[1].legend(handles=leyenda_prediccion, loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=2)
 
     # Grafico 3: coincidencia (verde) / no coincidencia (rojo)
-    colores = []
-    for esperado, predicho in zip(esperados, predicciones):
-        if esperado == predicho:
-            colores.append("green")
-        else:
-            colores.append("red")
+    colores = ["green" if e == p else "red" for e, p in zip(esperados, clases_predichas)]
             
     ejes[2].scatter(xs, ys, c=colores, s=50)
-    ejes[2].set_title("Coincidencia (verde) / No coincidencia (rojo)")
+    ejes[2].set_title("Coincidencias (Aciertos/Fallos)")
     ejes[2].set_xlabel("x1")
     ejes[2].set_ylabel("x2")
     ejes[2].legend(handles=leyenda_coincidencias, loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=2)
 
     plt.tight_layout()
-    plt.show()    
+    plt.show()
+    
 # ---------------------------------------------------------------------------
 # Procedimiento principal
 # ---------------------------------------------------------------------------
-def imprimir_tabla(entradas, esperados, predicciones):
+def imprimir_tabla(entradas, esperados, valores_crudos, clases_predichas, nombre_activacion):
     """
-    Muestra en la terminal una tabla comparativa con los valores de entrada, 
-    el resultado esperado, el resultado predicho y si hubo acierto.
+    Muestra en la terminal una tabla comparativa adaptada a la función utilizada.
     """
     print("\n--- Tabla de Resultados Detallada ---")
-    # Usamos formato de cadenas para alinear las columnas como una tabla
-    print(f"{'Entradas (x)':<30} | {'Esperado (y)':<12} | {'Predicción':<12} | {'¿Acierto?'}")
-    print("-" * 75)
     
-    for x, y, pred in zip(entradas, esperados, predicciones):
-        acierto = "Sí" if y == pred else "No"
-        # Convertimos la lista de entradas a texto (redondeando para que se vea limpio)
-        x_str = str([round(val, 4) for val in x]) 
-        
-        print(f"{x_str:<30} | {y:<12} | {pred:<12} | {acierto}")
+    if nombre_activacion == "Sigmoide":
+        print(f"{'Entradas (x)':<30} | {'Esperado':<8} | {'Probabilidad':<12} | {'Clase Pred.':<11} | {'¿Acierto?'}")
+        print("-" * 80)
+        for x, y, prob, clase_p in zip(entradas, esperados, valores_crudos, clases_predichas):
+            acierto = "Sí" if y == clase_p else "No"
+            x_str = str([round(val, 4) for val in x]) 
+            print(f"{x_str:<30} | {y:<8} | {prob:<12.4f} | {clase_p:<11} | {acierto}")
+    else:
+        print(f"{'Entradas (x)':<30} | {'Esperado':<8} | {'Predicción':<12} | {'¿Acierto?'}")
+        print("-" * 75)
+        for x, y, pred, clase_p in zip(entradas, esperados, valores_crudos, clases_predichas):
+            acierto = "Sí" if y == clase_p else "No"
+            x_str = str([round(val, 4) for val in x]) 
+            print(f"{x_str:<30} | {y:<8} | {clase_p:<12} | {acierto}")
 
 def main():
     print("=== Perceptrón - Tarea 1 ===\n")
@@ -269,7 +276,7 @@ def main():
     print("Este programa implementa un perceptrón de una sola capa.")
     print("Permite evaluar un conjunto de datos (cargado desde un archivo CSV)")
     print("utilizando diferentes pesos, un sesgo (bias) y la función de")
-    print("activación que mejor se adapte a su tipo de datos (Escalón o Signo).")
+    print("activación que se prefiera, Escalón o Sigmoide).")
     print("Al finalizar, se mostrará una tabla de aciertos y una representación")
     print("gráfica de los resultados esperados frente a las predicciones.")
     print("-" * 65 + "\n")
@@ -284,19 +291,21 @@ def main():
     seguir = True
     while seguir:
         sesgo, pesos = pedir_pesos(n_columnas)
-        nombre_activacion, funcion_activacion = pedir_activacion()
+        nombre_activacion, funcion_activacion, umbral = pedir_activacion()
 
-        predicciones = predecir_todo(entradas, pesos, sesgo, funcion_activacion)
+        valores_crudos, clases_predichas = predecir_todo(entradas, pesos, sesgo, funcion_activacion, nombre_activacion, umbral)
 
         aciertos = sum(
-            1 for e, p in zip(esperados, predicciones) if e == p
+            1 for e, p in zip(esperados, clases_predichas) if e == p
         )
         print(f"\nActivacion usada: {nombre_activacion}")
+        if nombre_activacion == "Sigmoide":
+            print(f"Umbral de clasificación: {umbral}")
         print(f"Aciertos: {aciertos} / {len(esperados)}")
 
-        imprimir_tabla(entradas, esperados, predicciones)
+        imprimir_tabla(entradas, esperados, valores_crudos, clases_predichas, nombre_activacion)
         
-        graficar_resultados(entradas, esperados, predicciones, nombre_activacion)
+        graficar_resultados(entradas, esperados, valores_crudos, clases_predichas, nombre_activacion, umbral)
 
         respuesta = input("\nDesea probar con otros pesos? (s/n): ").strip().lower()
         seguir = respuesta == "s"
