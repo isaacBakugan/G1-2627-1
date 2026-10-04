@@ -1,24 +1,24 @@
 {
-  "team": "",
+  "team": "G1",
   "assignment": "corte-preguntas-1",
   "questions": [
     {
       "id": "tue1-tf-1",
       "reading": "tuesday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del martes de la semana 1",
+      "statement": "Al aumentar la capacidad de un modelo, el error de entrenamiento y el error de generalización siempre disminuyen juntos.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "correct_option": "Falso",
+      "difficulty_level": 5
     },
     {
       "id": "tue1-tf-2",
       "reading": "tuesday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del martes de la semana 1",
+      "statement": "Un programa aprende de la experiencia E con respecto a una clase de tareas T y una medida de desempeño P si su desempeño en las tareas de T, medido por P, mejora con la experiencia E.",
       "options": [
         "Verdadero",
         "Falso"
@@ -30,107 +30,106 @@
       "id": "tue1-tf-3",
       "reading": "tuesday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del martes de la semana 1",
+      "statement": "El conjunto de validación puede reutilizarse como conjunto de prueba para reportar el error de generalización final, porque el error medido sobre él no está sesgado por la selección de hiperparámetros.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "correct_option": "Falso",
+      "difficulty_level": 4
     },
     {
       "id": "tue1-tf-4",
       "reading": "tuesday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del martes de la semana 1",
+      "statement": "En regresión lineal, si suponemos que el error de las predicciones sigue una distribución normal con varianza fija, encontrar los pesos w por máxima verosimilitud es lo mismo que minimizar el error cuadrático medio en los datos de entrenamiento.",
       "options": [
-        "Verdadero",
+        "Verdadero", 
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "difficulty_level": 5
     },
     {
       "id": "tue1-tf-5",
       "reading": "tuesday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del martes de la semana 1",
+      "statement": "La regularización se define como cualquier modificación a un algoritmo de aprendizaje cuyo propósito es reducir su error de entrenamiento, no su error de generalización.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "correct_option": "Falso",
+      "difficulty_level": 5
     },
     {
       "id": "tue1-mc-1",
       "reading": "tuesday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del martes de la semana 1",
+      "statement": "¿Cuál de los siguientes es un ejemplo de hiperparámetro y no de parámetro aprendido por el algoritmo?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Los pesos w de un modelo de regresión lineal", 
+        "Opción B: El grado del polinomio en una regresión polinomial", 
+        "Opción C: El término de sesgo (bias) b del modelo", 
+        "Opción D: La predicción ŷ para un ejemplo de prueba"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción B: El grado del polinomio en una regresión polinomial",
+      "difficulty_level": 3
     },
     {
       "id": "tue1-mc-2",
       "reading": "tuesday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del martes de la semana 1",
+      "statement": "¿Cuál de las siguientes situaciones describe el subajuste (underfitting)?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: La brecha entre el error de entrenamiento y el error de prueba es muy grande",
+        "Opción B: El modelo memoriza el ruido presente en el conjunto de entrenamiento",
+        "Opción C: El modelo no logra obtener un error de entrenamiento suficientemente bajo",
+        "Opción D: El conjunto de prueba contiene menos ejemplos que el de entrenamiento)"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción C: El modelo no logra obtener un error de entrenamiento suficientemente bajo",
+      "difficulty_level": 4
     },
     {
       "id": "tue1-mc-3",
       "reading": "tuesday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del martes de la semana 1",
+      "statement": "En términos del compromiso sesgo-varianza, ¿qué ocurre típicamente cuando se aumenta la capacidad de un modelo?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: El sesgo aumenta y la varianza disminuye",
+        "Opción B: Ambos, sesgo y varianza, disminuyen",
+        "Opción C: Ambos, sesgo y varianza, aumentan",
+        "Opción D: El sesgo disminuye y la varianza aumenta"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción D: El sesgo disminuye y la varianza aumenta",
+      "difficulty_level": 6
     },
     {
       "id": "tue1-mc-4",
       "reading": "tuesday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del martes de la semana 1",
+      "statement": "Cuando usamos decaimiento de pesos (weight decay), el costo es J(w) = error de entrenamiento + λ·wᵀw, donde wᵀw es la suma de los pesos al cuadrado. Si aumentamos λ, ¿qué le pasa al modelo?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
-      ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+        "Opción A: Los pesos tienden a ser más pequeños y el modelo se vuelve más simple (menos capacidad)", 
+        "Opción B: Los pesos tienden a ser más grandes y el modelo se vuelve más complejo (más capacidad)", 
+        "Opción C: El error de entrenamiento deja de contar en el costo", 
+        "Opción D: El modelo ya no necesita hiperparámetros"],
+      "correct_option": "Opción A: Los pesos tienden a ser más pequeños y el modelo se vuelve más simple (menos capacidad)",
+      "difficulty_level": 9
     },
     {
       "id": "tue1-mc-5",
       "reading": "tuesday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del martes de la semana 1",
+      "statement": "¿Cuál es la principal ventaja del descenso de gradiente con minilotes (minibatches) frente a calcular el gradiente con todo el conjunto de entrenamiento en cada paso?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Garantiza converger al mínimo global de la función de costo",
+        "Opción B: Elimina la necesidad de elegir una tasa de aprendizaje",
+        "Opción C: Produce siempre el gradiente exacto del costo total",
+        "Opción D: El costo de cada actualización no crece con el tamaño del conjunto de entrenamiento"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción D: El costo de cada actualización no crece con el tamaño del conjunto de entrenamiento",
+      "difficulty_level": 5
     },
     {
       "id": "thu1-tf-1",
