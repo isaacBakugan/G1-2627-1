@@ -396,7 +396,7 @@
       "id": "thu2-tf-1",
       "reading": "thursday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del jueves de la semana 2",
+      "statement": "Las redes feedforward no tienen conexiones de retroalimentación; si se les agregan conexiones de este tipo se obtienen redes neuronales recurrentes.",
       "options": [
         "Verdadero",
         "Falso"
@@ -408,119 +408,119 @@
       "id": "thu2-tf-2",
       "reading": "thursday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del jueves de la semana 2",
+      "statement": "Si todas las unidades ocultas de una red profunda usan activación lineal, la red puede representar funciones no lineales como XOR.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "correct_option": "Falso",
+      "difficulty_level": 3
     },
     {
       "id": "thu2-tf-3",
       "reading": "thursday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del jueves de la semana 2",
+      "statement": "La unidad lineal rectificada (ReLU) es una opción por defecto recomendada para las unidades ocultas de una red feedforward.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "difficulty_level": 4
     },
     {
       "id": "thu2-tf-4",
       "reading": "thursday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del jueves de la semana 2",
+      "statement": "El teorema de aproximación universal garantiza que el algoritmo de entrenamiento siempre encontrará los parámetros que representan la función objetivo.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "correct_option": "Falso",
+      "difficulty_level": 6
     },
     {
       "id": "thu2-tf-5",
       "reading": "thursday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del jueves de la semana 2",
+      "statement": "Usar la entropía cruzada (máxima verosimilitud) como función de costo ayuda a evitar la saturación de las unidades de salida sigmoide y softmax, porque el logaritmo deshace la exponencial de esas unidades.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "difficulty_level": 6
     },
     {
       "id": "thu2-mc-1",
       "reading": "thursday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del jueves de la semana 2",
+      "statement": "¿Cuál es la definición de la función de activación ReLU?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "g(z) = 1 / (1 + e^(−z))",
+        "g(z) = tanh(z)",
+        "g(z) = max{0, z}",
+        "g(z) = e^z / Σ e^z"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "g(z) = max{0, z}",
+      "difficulty_level": 2
     },
     {
       "id": "thu2-mc-2",
       "reading": "thursday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del jueves de la semana 2",
+      "statement": "Para representar una distribución de probabilidad sobre n clases, ¿qué unidad de salida se usa?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Una unidad lineal",
+        "Una unidad softmax",
+        "Una unidad ReLU",
+        "Una unidad maxout"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Una unidad softmax",
+      "difficulty_level": 3
     },
     {
       "id": "thu2-mc-3",
       "reading": "thursday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del jueves de la semana 2",
+      "statement": "¿Cuál es la relación correcta entre la retropropagación (back-propagation) y el descenso de gradiente?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "La retropropagación calcula el gradiente, y otro algoritmo, como el descenso de gradiente estocástico, lo usa para aprender",
+        "La retropropagación es el algoritmo que actualiza los pesos y el descenso de gradiente calcula las derivadas",
+        "La retropropagación solo puede usarse en redes con una capa oculta",
+        "La retropropagación reemplaza la regla de la cadena por diferencias finitas"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "La retropropagación calcula el gradiente, y otro algoritmo, como el descenso de gradiente estocástico, lo usa para aprender",
+      "difficulty_level": 5
     },
     {
       "id": "thu2-mc-4",
       "reading": "thursday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del jueves de la semana 2",
+      "statement": "Respecto a la profundidad frente al ancho de una red, ¿cuál de las siguientes afirmaciones es la más adecuada?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Una red superficial siempre necesita menos unidades que una profunda para representar la misma función",
+        "El ancho y la profundidad no influyen en la capacidad de representación",
+        "Las redes más profundas pueden representar ciertas funciones con muchas menos unidades que una red superficial, que podría requerir un número exponencial de unidades",
+        "Las redes más profundas nunca generalizan mejor que las superficiales"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Las redes más profundas pueden representar ciertas funciones con muchas menos unidades que una red superficial, que podría requerir un número exponencial de unidades",
+      "difficulty_level": 6
     },
     {
       "id": "thu2-mc-5",
       "reading": "thursday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del jueves de la semana 2",
+      "statement": "¿Cómo calcula su salida una unidad maxout?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Aplica la sigmoide a la suma ponderada de las entradas",
+        "Divide el vector z en grupos de k valores y devuelve el máximo de cada grupo",
+        "Devuelve el valor absoluto de z",
+        "Devuelve cero si z es negativo y z en caso contrario, sin ningún otro parámetro"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Divide el vector z en grupos de k valores y devuelve el máximo de cada grupo",
+      "difficulty_level": 8
     }
   ]
 }
