@@ -44,7 +44,7 @@
       "type": "true_false",
       "statement": "En regresión lineal, si suponemos que el error de las predicciones sigue una distribución normal con varianza fija, encontrar los pesos w por máxima verosimilitud es lo mismo que minimizar el error cuadrático medio en los datos de entrenamiento.",
       "options": [
-        "Verdadero", 
+        "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
@@ -68,9 +68,9 @@
       "type": "multiple_choice",
       "statement": "¿Cuál de los siguientes es un ejemplo de hiperparámetro y no de parámetro aprendido por el algoritmo?",
       "options": [
-        "Opción A: Los pesos w de un modelo de regresión lineal", 
-        "Opción B: El grado del polinomio en una regresión polinomial", 
-        "Opción C: El término de sesgo (bias) b del modelo", 
+        "Opción A: Los pesos w de un modelo de regresión lineal",
+        "Opción B: El grado del polinomio en una regresión polinomial",
+        "Opción C: El término de sesgo (bias) b del modelo",
         "Opción D: La predicción ŷ para un ejemplo de prueba"
       ],
       "correct_option": "Opción B: El grado del polinomio en una regresión polinomial",
@@ -110,10 +110,11 @@
       "type": "multiple_choice",
       "statement": "Cuando usamos decaimiento de pesos (weight decay), el costo es J(w) = error de entrenamiento + λ·wᵀw, donde wᵀw es la suma de los pesos al cuadrado. Si aumentamos λ, ¿qué le pasa al modelo?",
       "options": [
-        "Opción A: Los pesos tienden a ser más pequeños y el modelo se vuelve más simple (menos capacidad)", 
-        "Opción B: Los pesos tienden a ser más grandes y el modelo se vuelve más complejo (más capacidad)", 
-        "Opción C: El error de entrenamiento deja de contar en el costo", 
-        "Opción D: El modelo ya no necesita hiperparámetros"],
+        "Opción A: Los pesos tienden a ser más pequeños y el modelo se vuelve más simple (menos capacidad)",
+        "Opción B: Los pesos tienden a ser más grandes y el modelo se vuelve más complejo (más capacidad)",
+        "Opción C: El error de entrenamiento deja de contar en el costo",
+        "Opción D: El modelo ya no necesita hiperparámetros"
+      ],
       "correct_option": "Opción A: Los pesos tienden a ser más pequeños y el modelo se vuelve más simple (menos capacidad)",
       "difficulty_level": 9
     },
@@ -135,261 +136,261 @@
       "id": "thu1-tf-1",
       "reading": "thursday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del jueves de la semana 1",
+      "statement": "La regularización L1 suele dejar en cero el peso de muchos atributos, lo que en la práctica equivale a descartarlos por irrelevantes.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "difficulty_level": 3
     },
     {
       "id": "thu1-tf-2",
       "reading": "thursday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del jueves de la semana 1",
+      "statement": "Aunque los datos no sean linealmente separables, la regla del perceptrón puede converger a una solución de mínimo error si la tasa de aprendizaje va disminuyendo con el tiempo (del orden de 1/t) y los ejemplos se presentan en orden aleatorio.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "difficulty_level": 7
     },
     {
       "id": "thu1-tf-3",
       "reading": "thursday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del jueves de la semana 1",
+      "statement": "El descenso de gradiente estocástico espera a recorrer todos los ejemplos de entrenamiento antes de hacer un solo ajuste de los pesos.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "correct_option": "Falso",
+      "difficulty_level": 2
     },
     {
       "id": "thu1-tf-4",
       "reading": "thursday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del jueves de la semana 1",
+      "statement": "Como la regularización L2 es rotacionalmente invariante, es la opción más adecuada cuando los atributos no son intercambiables entre sí, por ejemplo «número de baños» y «tamaño del terreno».",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "correct_option": "Falso",
+      "difficulty_level": 8
     },
     {
       "id": "thu1-tf-5",
       "reading": "thursday-week-1",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del jueves de la semana 1",
+      "statement": "Un perceptrón de una sola capa no puede aprender la función XOR, porque sus casos no se pueden separar con una sola línea recta.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "difficulty_level": 3
     },
     {
       "id": "thu1-mc-1",
       "reading": "thursday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del jueves de la semana 1",
+      "statement": "¿Qué ventaja tiene la regresión logística frente a un clasificador de umbral duro, que solo responde 0 o 1?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Siempre clasifica todos los ejemplos sin errores",
+        "Opción B: No necesita ajustar pesos durante el entrenamiento",
+        "Opción C: Su salida se puede leer como una probabilidad, así que no da respuestas totalmente seguras cerca de la frontera",
+        "Opción D: Solo funciona cuando los datos son linealmente separables"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción C: Su salida se puede leer como una probabilidad, así que no da respuestas totalmente seguras cerca de la frontera",
+      "difficulty_level": 3
     },
     {
       "id": "thu1-mc-2",
       "reading": "thursday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del jueves de la semana 1",
+      "statement": "Un perceptrón aprende mejor que un árbol de decisión la función mayoría de 11 entradas, pero el árbol aprende mejor el problema del restaurante. ¿Qué explica esta diferencia?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: El perceptrón siempre es mejor con pocas entradas y el árbol con muchas",
+        "Opción B: La función mayoría es linealmente separable pero difícil de representar como árbol, mientras que el problema del restaurante se representa fácil como árbol pero no es linealmente separable",
+        "Opción C: El árbol de decisión recibió menos ejemplos de entrenamiento en el problema de la función mayoría",
+        "Opción D: Ambos problemas son linealmente separables, pero el árbol se sobreajusta en la función mayoría"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción B: La función mayoría es linealmente separable pero difícil de representar como árbol, mientras que el problema del restaurante se representa fácil como árbol pero no es linealmente separable",
+      "difficulty_level": 8
     },
     {
       "id": "thu1-mc-3",
       "reading": "thursday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del jueves de la semana 1",
+      "statement": "En una red neuronal multicapa, ¿qué es una capa oculta?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: La capa que recibe directamente los datos de entrada",
+        "Opción B: Una capa de unidades entre la entrada y la salida, cuyos valores no vienen dados en los datos de entrenamiento",
+        "Opción C: La capa que entrega el resultado final de la red",
+        "Opción D: Una capa que se elimina después de entrenar la red"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción B: Una capa de unidades entre la entrada y la salida, cuyos valores no vienen dados en los datos de entrenamiento",
+      "difficulty_level": 3
     },
     {
       "id": "thu1-mc-4",
       "reading": "thursday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del jueves de la semana 1",
+      "statement": "¿Cuál es la idea principal del algoritmo de back-propagation?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Probar al azar distintas combinaciones de pesos hasta encontrar una buena",
+        "Opción B: Agregar neuronas a la red cada vez que se equivoca",
+        "Opción C: Llevar el error de la salida hacia atrás para repartir la responsabilidad entre las neuronas ocultas y ajustar sus pesos",
+        "Opción D: Entrenar solo la capa de salida y dejar fijas las demás"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción C: Llevar el error de la salida hacia atrás para repartir la responsabilidad entre las neuronas ocultas y ajustar sus pesos",
+      "difficulty_level": 4
     },
     {
       "id": "thu1-mc-5",
       "reading": "thursday-week-1",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del jueves de la semana 1",
+      "statement": "¿Qué puede pasar si se elige una red neuronal demasiado grande para un problema?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Que memorice los ejemplos de entrenamiento y no generalice bien a datos nuevos",
+        "Opción B: Que no pueda aprender ni siquiera los datos de entrenamiento",
+        "Opción C: Que se vuelva una red recurrente automáticamente",
+        "Opción D: Que deje de necesitar datos de entrenamiento"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción A: Que memorice los ejemplos de entrenamiento y no generalice bien a datos nuevos",
+      "difficulty_level": 3
     },
     {
       "id": "tue2-tf-1",
       "reading": "tuesday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del martes de la semana 2",
+      "statement": "El teorema de aproximación universal dice que un perceptrón multicapa con una sola capa oculta puede aproximar cualquier función continua con la precisión que queramos.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "difficulty_level": 4
     },
     {
       "id": "tue2-tf-2",
       "reading": "tuesday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del martes de la semana 2",
+      "statement": "Con el término de momento, si la derivada del error cambia de signo en iteraciones consecutivas, el ajuste acumulado de los pesos se hace más pequeño y el momento actúa como estabilizador.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "difficulty_level": 7
     },
     {
       "id": "tue2-tf-3",
       "reading": "tuesday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del martes de la semana 2",
+      "statement": "En el aprendizaje en línea (online) los pesos se ajustan después de cada ejemplo, mientras que en el aprendizaje por lotes (batch) se ajustan después de ver todos los ejemplos de una época.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "difficulty_level": 2
     },
     {
       "id": "tue2-tf-4",
       "reading": "tuesday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del martes de la semana 2",
+      "statement": "Una red que memoriza los datos de entrenamiento (sobreentrenamiento) suele responder mejor ante datos nuevos.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "correct_option": "Falso",
+      "difficulty_level": 2
     },
     {
       "id": "tue2-tf-5",
       "reading": "tuesday-week-2",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del martes de la semana 2",
+      "statement": "Las neuronas de las capas ocultas tienen su propia respuesta deseada en los datos de entrenamiento, igual que las neuronas de salida.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1
+      "correct_option": "Falso",
+      "difficulty_level": 4
     },
     {
       "id": "tue2-mc-1",
       "reading": "tuesday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del martes de la semana 2",
+      "statement": "Según la curva de validación cruzada (error de generalización contra número de épocas), ¿qué permite que una red con demasiados parámetros igual generalice bien?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Entrenarla hasta que el error en los datos de entrenamiento llegue a cero",
+        "Opción B: Detener el entrenamiento en la época en que el error en el conjunto de validación es mínimo",
+        "Opción C: Usar el conjunto de prueba para decidir en qué época detenerse",
+        "Opción D: Reducir la red a una sola neurona oculta antes de entrenar"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción B: Detener el entrenamiento en la época en que el error en el conjunto de validación es mínimo",
+      "difficulty_level": 7
     },
     {
       "id": "tue2-mc-2",
       "reading": "tuesday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del martes de la semana 2",
+      "statement": "¿Cuál es una ventaja del aprendizaje en línea (online) frente al aprendizaje por lotes (batch)?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Calcula el gradiente de forma exacta en cada paso",
+        "Opción B: Es más fácil de repartir entre varios procesadores",
+        "Opción C: Necesita menos memoria y es menos probable que se quede atascado en un mínimo local",
+        "Opción D: Siempre llega a un error de cero en los datos de entrenamiento"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción C: Necesita menos memoria y es menos probable que se quede atascado en un mínimo local",
+      "difficulty_level": 4
     },
     {
       "id": "tue2-mc-3",
       "reading": "tuesday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del martes de la semana 2",
+      "statement": "En validación cruzada, ¿para qué sirve el subconjunto de validación?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Para entrenar los pesos de la red",
+        "Opción B: Para comparar varios modelos con datos distintos a los usados para entrenarlos y elegir el mejor",
+        "Opción C: Para reemplazar al conjunto de prueba en el reporte final",
+        "Opción D: Para aumentar la cantidad de ejemplos de entrenamiento"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción B: Para comparar varios modelos con datos distintos a los usados para entrenarlos y elegir el mejor",
+      "difficulty_level": 4
     },
     {
       "id": "tue2-mc-4",
       "reading": "tuesday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del martes de la semana 2",
+      "statement": "Una regla práctica dice que el número de ejemplos de entrenamiento necesarios es del orden de W/ε, donde W es el total de pesos y sesgos de la red y ε la fracción de error aceptada en prueba. Si una red tiene 1.000 pesos y sesgos y aceptamos un 10 % de error, ¿cuántos ejemplos se necesitan aproximadamente?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Unos 100",
+        "Opción B: Unos 1.000",
+        "Opción C: Unos 10.000",
+        "Opción D: Unos 100.000"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción C: Unos 10.000",
+      "difficulty_level": 8
     },
     {
       "id": "tue2-mc-5",
       "reading": "tuesday-week-2",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del martes de la semana 2",
+      "statement": "La generalización depende del tamaño y la representatividad de la muestra de entrenamiento, de la arquitectura de la red y de la complejidad del problema. ¿Cuál de estos factores no podemos controlar?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: El tamaño de la muestra de entrenamiento",
+        "Opción B: La arquitectura de la red",
+        "Opción C: La representatividad de la muestra de entrenamiento",
+        "Opción D: La complejidad del problema"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1
+      "correct_option": "Opción D: La complejidad del problema",
+      "difficulty_level": 3
     },
     {
       "id": "thu2-tf-1",
