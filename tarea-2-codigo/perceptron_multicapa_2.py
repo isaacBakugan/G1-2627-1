@@ -50,11 +50,12 @@ class PerceptronMulticapa:
 
     @staticmethod
     def _act(z):
-        return np.tanh(z)
+        # Clip evita desbordamientos (overflow) con np.exp en valores muy grandes
+        return 1.0 / (1.0 + np.exp(-np.clip(z, -500, 500)))
 
     @staticmethod
     def _act_deriv(a):
-        return 1.0 - a ** 2
+        return a * (1.0 - a)
 
     def forward(self, x: np.ndarray):
         """
@@ -81,13 +82,14 @@ class PerceptronMulticapa:
             out = acts[-1].flatten()
 
             if self.v == 1:
-                pred_val = classes_list[1] if out[0] >= 0 else classes_list[0]
+                # El umbral para sigmoide es 0.5
+                pred_val = classes_list[1] if out[0] >= 0.5 else classes_list[0]
             else:
                 best_idx = int(np.argmax(out))
                 pred_val = classes_list[best_idx]
             preds.append(pred_val)
         return np.array(preds)
-
+    
     def train(self, X: np.ndarray, y: np.ndarray, epochs: int, lr: float = 0.03):
         """
         Entrenamiento por retropropagación con gradiente estocástico/mini-lotes.
@@ -96,13 +98,13 @@ class PerceptronMulticapa:
         n_samples = len(X)
         history_errors = []
 
-        # Convertir etiquetas y a vectores target
+        # Convertir etiquetas y a vectores target adaptados a sigmoide [0, 1]
         targets = []
         for label in y:
             if self.v == 1:
-                t = np.array([[1.0]] if label == classes_list[1] else [[-1.0]])
+                t = np.array([[1.0]] if label == classes_list[1] else [[0.0]])
             else:
-                t = np.full((self.v, 1), -1.0)
+                t = np.zeros((self.v, 1)) # Modificado de np.full a np.zeros
                 idx = classes_list.index(label)
                 t[idx, 0] = 1.0
             targets.append(t)
