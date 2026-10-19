@@ -1,147 +1,150 @@
 {
-  "team": "",
+  "team": "G1",
   "assignment": "corte-preguntas-2",
   "questions": [
     {
       "id": "tue3-tf-1",
       "reading": "tuesday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del martes de la semana 3",
+      "statement": "Muchas bibliotecas de aprendizaje automático implementan la correlación cruzada, sin voltear el kernel, pero la llaman convolución.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 4,
+      "source_quote": "Many machine learning libraries implement cross-correlation but call it convolution."
     },
     {
       "id": "tue3-tf-2",
       "reading": "tuesday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del martes de la semana 3",
+      "statement": "La convolución es naturalmente equivariante a los cambios de escala y a las rotaciones de una imagen.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 6,
+      "source_quote": "Convolution is not naturally equivariant to some other transformations, such as changes in the scale or rotation of an image."
     },
     {
       "id": "tue3-tf-3",
       "reading": "tuesday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del martes de la semana 3",
+      "statement": "En una capa convolucional típica, la etapa donde cada activación lineal pasa por una no linealidad como la ReLU se suele llamar etapa detectora.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 3,
+      "source_quote": "This stage is sometimes called the detector stage."
     },
     {
       "id": "tue3-tf-4",
       "reading": "tuesday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del martes de la semana 3",
+      "statement": "En la convolución válida, si la imagen tiene ancho m y el kernel ancho k, la salida conserva el mismo ancho m que la entrada.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 7,
+      "source_quote": "If the input image has width m and the kernel has width k, the output will be of width m − k + 1."
     },
     {
       "id": "tue3-tf-5",
       "reading": "tuesday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del martes de la semana 3",
+      "statement": "Mediante correlación inversa se ha encontrado que la mayoría de las células de V1 tienen pesos descritos por funciones de Gabor.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 7,
+      "source_quote": "Reverse correlation shows us that most V1 cells have weights that are described by Gabor functions."
     },
     {
       "id": "tue3-mc-1",
       "reading": "tuesday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del martes de la semana 3",
+      "statement": "¿Cuáles son las tres ideas que, según el capítulo, aprovecha la convolución para mejorar un sistema de aprendizaje automático?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Conexiones densas, pesos independientes por posición e invarianza a la escala",
+        "Pooling, normalización por lotes y relleno con ceros alrededor de la imagen",
+        "Interacciones dispersas, compartición de parámetros y representaciones equivariantes",
+        "Volteo del kernel, propiedad conmutativa y correlación cruzada entre entradas"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Interacciones dispersas, compartición de parámetros y representaciones equivariantes",
+      "difficulty_level": 2,
+      "source_quote": "Convolution leverages three important ideas that can help improve a machine learning system: sparse interactions, parameter sharing and equivariant representations."
     },
     {
       "id": "tue3-mc-2",
       "reading": "tuesday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del martes de la semana 3",
+      "statement": "Si en una capa con m entradas y n salidas cada salida se limita a k conexiones, ¿cuántos parámetros y qué tiempo de ejecución requiere el enfoque disperso?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "m × n parámetros y tiempo O(m × n)",
+        "k × n parámetros y tiempo O(k × n)",
+        "k × m parámetros y tiempo O(k × m)",
+        "k parámetros y tiempo O(k)"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "k × n parámetros y tiempo O(k × n)",
+      "difficulty_level": 7,
+      "source_quote": "the sparsely connected approach requires only k × n parameters and O(k × n) runtime."
     },
     {
       "id": "tue3-mc-3",
       "reading": "tuesday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del martes de la semana 3",
+      "statement": "¿Qué hace la operación de max pooling sobre las salidas de una capa?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Promedia las salidas dentro de una vecindad rectangular",
+        "Calcula la norma L2 de una vecindad rectangular",
+        "Toma un promedio ponderado según la distancia al píxel central",
+        "Reporta la salida máxima dentro de una vecindad rectangular"
       ],
-      "correct_option": "Opción A (edítenla)",
+      "correct_option": "Reporta la salida máxima dentro de una vecindad rectangular",
       "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "source_quote": "the max pooling (Zhou and Chellappa, 1988) operation reports the maximum output within a rectangular neighborhood."
     },
     {
       "id": "tue3-mc-4",
       "reading": "tuesday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del martes de la semana 3",
+      "statement": "¿Cómo puede interpretarse el uso de pooling desde el punto de vista de los priors del modelo?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Como añadir un prior infinitamente fuerte de que la función aprendida es invariante a traslaciones pequeñas",
+        "Como añadir un prior débil que favorece la equivariancia de la capa a rotaciones de la imagen",
+        "Como eliminar todo prior sobre la ubicación de los rasgos, igual que una capa totalmente conectada",
+        "Como añadir un prior infinitamente fuerte de que los rasgos deben ser invariantes a la escala"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Como añadir un prior infinitamente fuerte de que la función aprendida es invariante a traslaciones pequeñas",
+      "difficulty_level": 8,
+      "source_quote": "The use of pooling can be viewed as adding an infinitely strong prior that the function the layer learns must be invariant to small translations."
     },
     {
       "id": "tue3-mc-5",
       "reading": "tuesday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del martes de la semana 3",
+      "statement": "¿Qué tipo de células de la corteza V1 inspiró las unidades de pooling de las redes convolucionales?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Las células simples",
+        "Las células de la retina",
+        "Las células complejas",
+        "Las llamadas células abuela"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Las células complejas",
+      "difficulty_level": 5,
+      "source_quote": "complex cells are invariant to small shifts in the position of the feature. This inspires the pooling units of convolutional networks."
     },
+
+
+    
     {
       "id": "thu3-tf-1",
       "reading": "thursday-week-3",
@@ -562,145 +565,150 @@
       "difficulty_level": 1,
       "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
     },
+
+
+
+
     {
       "id": "tue5-tf-1",
       "reading": "tuesday-week-5",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del martes de la semana 5",
+      "statement": "En el aprendizaje por refuerzo pasivo la política del agente está fija, y su objetivo es aprender qué tan buena es esa política.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 2,
+      "source_quote": "Its goal is simply to learn how good the policy is"
     },
     {
       "id": "tue5-tf-2",
       "reading": "tuesday-week-5",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del martes de la semana 5",
+      "statement": "El aprendizaje por diferencias temporales (TD) necesita el modelo de transición P(s'|s,a) para poder actualizar sus estimaciones de utilidad.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 4,
+      "source_quote": "Notice that TD does not need a transition model to perform its updates."
     },
     {
       "id": "tue5-tf-3",
       "reading": "tuesday-week-5",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del martes de la semana 5",
+      "statement": "Q-learning es un algoritmo de aprendizaje on-policy, mientras que SARSA es un algoritmo off-policy.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 7,
+      "source_quote": "it is an off-policy learning algorithm, whereas SARSA is an on-policy algorithm."
     },
     {
       "id": "tue5-tf-4",
       "reading": "tuesday-week-5",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del martes de la semana 5",
+      "statement": "El agente codicioso puede terminar con una política subóptima porque lo que es óptimo en el modelo aprendido puede no serlo en el entorno real.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 7,
+      "source_quote": "The answer is that the learned model is not the same as the true environment; what is optimal in the learned model can therefore be suboptimal in the true environment."
     },
     {
       "id": "tue5-tf-5",
       "reading": "tuesday-week-5",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del martes de la semana 5",
+      "statement": "TD-GAMMON aprendió a jugar backgammon a partir de jugadas etiquetadas con valores por un experto humano.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
+      "correct_option": "Falso",
+      "difficulty_level": 3,
+      "source_quote": "The TD-GAMMON project was an attempt to learn from self-play alone."
+    }, 
     {
       "id": "tue5-mc-1",
       "reading": "tuesday-week-5",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del martes de la semana 5",
+      "statement": "Según el capítulo, ¿qué aprende un agente de Q-learning?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Una política que mapea directamente los estados a las acciones",
+        "Una función acción-utilidad que da la utilidad esperada de cada acción en cada estado",
+        "Una función de utilidad sobre los estados junto con un modelo del entorno",
+        "Únicamente el modelo de transición P(s'|s,a) del entorno"
       ],
-      "correct_option": "Opción A (edítenla)",
+      "correct_option": "Una función acción-utilidad que da la utilidad esperada de cada acción en cada estado",
       "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "source_quote": "A Q-learning agent learns an action-utility function, or Q-function, giving the expected utility of taking a given action in a given state."
     },
     {
       "id": "tue5-mc-2",
       "reading": "tuesday-week-5",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del martes de la semana 5",
+      "statement": "¿Cuál es la principal debilidad de la estimación directa de utilidad que señala el capítulo?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Ignora que las utilidades de estados vecinos están ligadas por las ecuaciones de Bellman",
+        "Necesita conocer de antemano la función de recompensa R(s) de cada estado",
+        "Solo funciona cuando el factor de descuento es estrictamente menor que 1",
+        "Exige resolver el MDP completo después de cada transición observada"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Ignora que las utilidades de estados vecinos están ligadas por las ecuaciones de Bellman",
+      "difficulty_level": 6,
+      "source_quote": "By ignoring the connections between states, direct utility estimation misses opportunities for learning."
     },
     {
       "id": "tue5-mc-3",
       "reading": "tuesday-week-5",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del martes de la semana 5",
+      "statement": "En el ejemplo de TD, U(1,3) = 0.84, U(2,3) = 0.92, la recompensa es -0.04 y γ = 1. Si esa transición ocurriera siempre, ¿cuánto debería valer U(1,3)?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "0.84",
+        "0.92",
+        "0.96",
+        "0.88"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "0.88",
+      "difficulty_level": 8,
+      "source_quote": "so Uπ(1,3) would be 0.88. Thus, its current estimate of 0.84 might be a little low and should be increased."
     },
     {
       "id": "tue5-mc-4",
       "reading": "tuesday-week-5",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del martes de la semana 5",
+      "statement": "¿Qué debe cumplir un esquema de exploración GLIE (greedy in the limit of infinite exploration)?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Explorar al azar con probabilidad fija y no volverse nunca completamente codicioso",
+        "Probar cada acción en cada estado un número ilimitado de veces y acabar siendo codicioso",
+        "Probar cada acción una sola vez y luego seguir siempre la mejor acción observada",
+        "Elegir desde el primer ensayo la acción con mayor recompensa inmediata"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Probar cada acción en cada estado un número ilimitado de veces y acabar siendo codicioso",
+      "difficulty_level": 5,
+      "source_quote": "A GLIE scheme must try each action in each state an unbounded number of times"
     },
     {
       "id": "tue5-mc-5",
       "reading": "tuesday-week-5",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del martes de la semana 5",
+      "statement": "En el problema cart-pole (péndulo invertido), ¿cómo se llama el régimen de control cuyas acciones son empujar a la izquierda o a la derecha?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Control PID",
+        "Control por política codiciosa",
+        "Control bang-bang",
+        "Control por búsqueda de políticas PEGASUS"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Control bang-bang",
+      "difficulty_level": 3,
+      "source_quote": "The actions are usually discrete: jerk left or jerk right, the so-called bang-bang control regime."
     }
+
   ]
 }
