@@ -192,7 +192,7 @@ class App:
         b = self.leer_entero("Número de neuronas por capa oculta: ", 1) if L > 0 else 0
         self.red = Perceptron(u, v, L, b)
 
-    def _cargar(self):
+    def cargar(self):
         while True:
             ruta = input("Ruta del archivo de la red: ").strip().strip('"').strip("'")
             try:
@@ -261,7 +261,7 @@ class App:
             if opcion == "1":
                 self.crear()
             elif opcion == "2":
-                self._cargar()
+                self.cargar()
             elif opcion == "3":
                 print("Fin.")
                 break
@@ -276,7 +276,7 @@ class App:
                     self.evaluar()
                 elif opcion == "3":
                     self.guardar_red()
-                if opcion == "4":
+                elif opcion == "4":
                     print("Fin.")
                     break
                 else:
@@ -506,6 +506,7 @@ class Perceptron:
             for fila in filas:
                 archivo.write(",".join(fila) + "\n")
 
+    @classmethod
     def cargar(cls, ruta):
         """Lee un archivo de red y devuelve un Perceptron. Reconoce cada fila por su primera columna."""
         hiper = {}

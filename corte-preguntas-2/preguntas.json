@@ -289,141 +289,141 @@
       "id": "tue4-tf-1",
       "reading": "tuesday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del martes de la semana 4",
+      "statement": "¿El Transformer elimina por completo la recurrencia y las convoluciones, para basarse únicamente en mecanismos de atención?",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
       "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "source_quote": "based solely on attention mechanisms, dispensing with recurrence and convolutions entirely"
     },
     {
       "id": "tue4-tf-2",
       "reading": "tuesday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del martes de la semana 4",
+      "statement": "El codificador y el decodificador del Transformer están compuestos por una pila de 12 capas idénticas.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 3,
+      "source_quote": "The encoder is composed of a stack of N = 6 identical layers."
     },
     {
       "id": "tue4-tf-3",
       "reading": "tuesday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del martes de la semana 4",
+      "statement": "Los autores prefirieron la codificación posicional aprendida, ya que dió resultados muy superiores a la versión sinusoidal",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 6,
+      "source_quote": "We also experimented with using learned positional embeddings [8] instead, and found that the two versions produced nearly identical results"
     },
     {
       "id": "tue4-tf-4",
       "reading": "tuesday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del martes de la semana 4",
+      "statement": "El decodificador oculta su auto-atención para que la predicción de la posición i dependa únicamente de las salidas conocidas en posiciones menores que i?",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 5,
+      "source_quote": "ensures that the predictions for position i can depend only on the known outputs at positions less than i."
     },
     {
       "id": "tue4-tf-5",
       "reading": "tuesday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del martes de la semana 4",
+      "statement": "Según los autores, las capas de auto-atención son más lentas que las recurrentes porque su longitud de secuencia n es menor que la dimensión de representación d",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 8,
+      "source_quote": "self-attention layers are faster than recurrent layers when the sequence length n is smaller than the representation dimensionality d"
     },
     {
       "id": "tue4-mc-1",
       "reading": "tuesday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del martes de la semana 4",
+      "statement": "Por qué la atención de producto punto escalado divide los productos punto entre la raíz cuadrada de d_k?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Porque con d_k grande los productos punto crecen y llevan al softmax a zonas de gradientes muy pequeños",
+        "El producto punto termina siendo más rápido que la atención aditiva al implementarse",
+        "Normaliza los valores V para que la salida de cada cabeza tenga una varianza unitaria",
+        "Impide que las posiciones del decodificador atiendan a posiciones posteriores"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Porque con d_k grande los productos punto crecen y llevan al softmax a zonas de gradientes muy pequeños",
+      "difficulty_level": 7,
+      "source_quote": "the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients"
     },
     {
       "id": "tue4-mc-2",
       "reading": "tuesday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del martes de la semana 4",
+      "statement": "En el Transformer del artículo, ¿cuántas cabezas de atención se usan y qué dimensión d_k = d_v tiene cada una?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "6 cabezas con d_k = d_v = 512",
+        "16 cabezas con d_k = d_v = 32",
+        "8 cabezas con d_k = d_v = 64",
+        "8 cabezas con d_k = d_v = 512"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "8 cabezas con d_k = d_v = 64",
+      "difficulty_level": 4,
+      "source_quote": "In this work we employ h = 8 parallel attention layers, or heads. For each of these we use dk = dv = dmodel/h = 64."
     },
     {
       "id": "tue4-mc-3",
       "reading": "tuesday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del martes de la semana 4",
+      "statement": "En las capas de atención codificador-decodificador ¿de dónde provienen las consultas (queries), las claves y los valores?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Provienen todas de la salida de la capa anterior del codificador",
+        "Las consultas vienen de la capa anterior del decodificador y las claves y valores de la salida del codificador",
+        "Las consultas, de la salida del codificador y las claves y valores de la capa anterior del decodificador",
+        "Las consultas provienen de los embeddings de entrada y las claves y valores de la codificación posicional"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Las consultas vienen de la capa anterior del decodificador y las claves y valores de la salida del codificador",
+      "difficulty_level": 6,
+      "source_quote": "the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder."
     },
     {
       "id": "tue4-mc-4",
       "reading": "tuesday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del martes de la semana 4",
+      "statement": "Para conectar todas las posiciones de la secuencia, cuántas operaciones secuenciales requieren una capa de auto-atención y una capa recurrente?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "O(n) la de auto-atención y O(1) la recurrente",
+        "O(log_k(n)) en ambos tipos de capa",
+        "O(n/r) la de auto-atención y O(n²) la recurrente",
+        "Un número constante, O(1), la de auto-atención y O(n) la recurrente"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Un número constante, O(1), la de auto-atención y O(n) la recurrente",
+      "difficulty_level": 7,
+      "source_quote": "a self-attention layer connects all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires O(n) sequential operations."
     },
     {
       "id": "tue4-mc-5",
       "reading": "tuesday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del martes de la semana 4",
+      "statement": "Qué resultado consiguió el Transformer en la tarea de traducción inglés-alemán de WMT 2014?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "28.4 BLEU, superando por más de 2 BLEU los mejores resultados previos",
+        "41.0 BLEU, un nuevo estado del arte para un solo modelo",
+        "24.6 BLEU, similar a los modelos recurrentes previos",
+        "28.4 BLEU, aunque por debajo de los ensambles existentes"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "28.4 BLEU, superando por más de 2 BLEU los mejores resultados previos",
+      "difficulty_level": 2,
+      "source_quote": "Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU."
     },
     {
       "id": "thu4-tf-1",
