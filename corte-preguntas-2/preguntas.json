@@ -149,141 +149,141 @@
       "id": "thu3-tf-1",
       "reading": "thursday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del jueves de la semana 3",
+      "statement": "La red de Hopfield es una red neuronal artificial recurrente inventada por John Hopfield en 1982.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
       "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "source_quote": "The Hopfield network is a form of recurrent artificial neural network invented by John Hopfield in 1982."
     },
     {
       "id": "thu3-tf-2",
       "reading": "thursday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del jueves de la semana 3",
+      "statement": "En el modelo discreto de Hopfield cada neurona se retroalimenta a sí misma, por lo que el peso w_ji es distinto de cero cuando i = j.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 4,
+      "source_quote": "Additionally, wji = 0 when i = j, which in fact means that the self-feedback does not exist in the model"
     },
     {
       "id": "thu3-tf-3",
       "reading": "thursday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del jueves de la semana 3",
+      "statement": "En la red de Hopfield discreta, si el campo local inducido v_j(k+1) de la neurona j es exactamente cero, la neurona conserva su estado anterior.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 6,
+      "source_quote": "Note that neuron j remains in its previous state if vj(k + 1) is zero."
     },
     {
       "id": "thu3-tf-4",
       "reading": "thursday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del jueves de la semana 3",
+      "statement": "En el ejemplo de la capa 2 de Grossberg con dos neuronas, la salida de ambas neuronas decae a cero una vez que se retira la entrada.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 7,
+      "source_quote": "After the input is removed, the output of the first neuron decays to zero, while the output of the second reaches a steady state value of 0.79."
     },
     {
       "id": "thu3-tf-5",
       "reading": "thursday-week-3",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del jueves de la semana 3",
+      "statement": "Según Grossberg, la segmentación emergente completa los bordes faltantes y el llenado de rasgos (featural filling-in) rellena el color y el brillo dentro de esos bordes.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 3,
+      "source_quote": "The first, which he calls emergent segmentation, completes missing boundaries. The second, which he calls featural filling-in, fills in the color and brightness inside the resulting boundaries."
     },
     {
       "id": "thu3-mc-1",
       "reading": "thursday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del jueves de la semana 3",
+      "statement": "¿Cómo se comporta la función de transferencia satlins que usa la red de Hopfield en x(k+1) = satlins(Wp + b)?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Es una sigmoide logística que acota la salida entre 0 y 1",
+        "Opción B: Es lineal en el rango [-1, 1] y satura en 1 y en -1 fuera de ese rango",
+        "Opción C: Es un escalón que devuelve 0 o 1 según el signo de la entrada",
+        "Opción D: Anula las entradas negativas y deja pasar sin límite las positivas"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción B: Es lineal en el rango [-1, 1] y satura en 1 y en -1 fuera de ese rango",
+      "difficulty_level": 2,
+      "source_quote": "where satlins is the transfer function that is linear in the range [-1, 1], and saturates at 1 for inputs greater than 1 and at -1 for inputs less than -1."
     },
     {
       "id": "thu3-mc-2",
       "reading": "thursday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del jueves de la semana 3",
+      "statement": "En el ejemplo de naranjas y manzanas, la red de Hopfield arranca en x(k) = [-1, -1, -1]ᵀ (la naranja oblonga). ¿A qué vector converge?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: [1, 1, -1]ᵀ, el patrón de la manzana",
+        "Opción B: [0.7, -1, -1]ᵀ, que es un punto fijo estable de la red",
+        "Opción C: [-1, -1, -1]ᵀ, porque el estado inicial ya es estable",
+        "Opción D: [1, -1, -1]ᵀ, el patrón de la naranja"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción D: [1, -1, -1]ᵀ, el patrón de la naranja",
+      "difficulty_level": 7,
+      "source_quote": "The network has converged to the orange pattern."
     },
     {
       "id": "thu3-mc-3",
       "reading": "thursday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del jueves de la semana 3",
+      "statement": "En el modelo de circuito de la red de Hopfield continua (Figura 5.3), ¿qué magnitud física representa el término w_ji?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Una conductancia",
+        "Opción B: Una resistencia de fuga",
+        "Opción C: Una capacitancia de fuga",
+        "Opción D: Una corriente externa"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción A: Una conductancia",
+      "difficulty_level": 4,
+      "source_quote": "Ij: external current wji: conductance"
     },
     {
       "id": "thu3-mc-4",
       "reading": "thursday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del jueves de la semana 3",
+      "statement": "En la red competitiva de dos capas de Grossberg, ¿qué modela y qué hace cada capa?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: La capa 1 modela la corteza visual y realza el contraste; la capa 2 modela la retina y normaliza la entrada",
+        "Opción B: Ambas capas modelan la retina: la capa 1 normaliza y la capa 2 guarda los pesos adaptativos de largo plazo",
+        "Opción C: La capa 1 modela la retina y normaliza la entrada; la capa 2 modela la corteza visual y realza el contraste",
+        "Opción D: La capa 1 aplica la ley de aprendizaje y la capa 2 modela la retina normalizando la intensidad del patrón"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción C: La capa 1 modela la retina y normaliza la entrada; la capa 2 modela la corteza visual y realza el contraste",
+      "difficulty_level": 5,
+      "source_quote": "Layer 1 is a rough model of the operation of the retina, while Layer 2 represents the visual cortex."
     },
     {
       "id": "thu3-mc-5",
       "reading": "thursday-week-3",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del jueves de la semana 3",
+      "statement": "En el ejemplo de la capa 2 de Grossberg con a¹ = [0.2, 0.8]ᵀ, la segunda neurona recibe 1.5 veces la entrada de la primera. ¿Qué pasa con sus salidas tras 0.25 s?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Ambas salidas son iguales porque la capa 2 normaliza el patrón",
+        "Opción B: La salida de la segunda es 1.5 veces la de la primera, igual que la entrada",
+        "Opción C: La salida de la primera supera a la de la segunda por la inhibición lateral",
+        "Opción D: La salida de la segunda neurona es 6.34 veces la de la primera"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción D: La salida de la segunda neurona es 6.34 veces la de la primera",
+      "difficulty_level": 9,
+      "source_quote": "However, after 0.25 s the output of the second neuron is 6.34 times the output of the first neuron."
     },
     {
       "id": "tue4-tf-1",
