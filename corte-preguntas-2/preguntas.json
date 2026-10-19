@@ -501,7 +501,7 @@
         "Opción C: Policy, Evaluation, Agent, Search",
         "Opción D: Performance, Episodes, Agents, States"
       ],
-      "correct_option": "Opción A: Performance, Environment, Actuators, Sensors.",
+      "correct_option": "Opción A: Performance, Environment, Actuators, Sensors",
       "difficulty_level": 2,
       "source_quote": "we call this the PEAS (Performance, Environment, Actuators, Sensors) description."
     },
