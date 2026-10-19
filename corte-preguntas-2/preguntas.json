@@ -429,141 +429,141 @@
       "id": "thu4-tf-1",
       "reading": "thursday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del jueves de la semana 4",
+      "statement": "Un agente racional debe elegir la acción que se espera maximice su medida de desempeño, según sus percepciones y su conocimiento incorporado.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
       "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "source_quote": "For each possible percept sequence, a rational agent should select an action that is expected to maximize its performance measure"
     },
     {
       "id": "thu4-tf-2",
       "reading": "thursday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del jueves de la semana 4",
+      "statement": "La racionalidad exige omnisciencia: un agente racional debe conocer de antemano el resultado real de sus acciones.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 3,
+      "source_quote": "An omniscient agent knows the actual outcome of its actions and can act accordingly; but omniscience is impossible in reality."
     },
     {
       "id": "thu4-tf-3",
       "reading": "thursday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del jueves de la semana 4",
+      "statement": "En un entorno de tarea episódico, el episodio siguiente no depende de las acciones tomadas en los episodios anteriores.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 4,
+      "source_quote": "Crucially, the next episode does not depend on the actions taken in previous episodes."
     },
     {
       "id": "thu4-tf-4",
       "reading": "thursday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del jueves de la semana 4",
+      "statement": "Un agente reflejo simple decide con base en toda su historia de percepciones, así que funciona bien en entornos parcialmente observables.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 5,
+      "source_quote": "These agents select actions on the basis of the current percept, ignoring the rest of the percept history."
     },
     {
       "id": "thu4-tf-5",
       "reading": "thursday-week-4",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del jueves de la semana 4",
+      "statement": "Toda heurística consistente es también admisible, por lo que la consistencia es un requisito más estricto que la admisibilidad.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 8,
+      "source_quote": "every consistent heuristic is also admissible. Consistency is therefore a stricter requirement than admissibility"
     },
     {
       "id": "thu4-mc-1",
       "reading": "thursday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del jueves de la semana 4",
+      "statement": "¿Qué significan las siglas PEAS con las que se describe un entorno de tarea?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Performance, Environment, Actuators, Sensors",
+        "Opción B: Percepts, Environment, Actions, States",
+        "Opción C: Policy, Evaluation, Agent, Search",
+        "Opción D: Performance, Episodes, Agents, States"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción A: Performance, Environment, Actuators, Sensors.",
+      "difficulty_level": 2,
+      "source_quote": "we call this the PEAS (Performance, Environment, Actuators, Sensors) description."
     },
     {
       "id": "thu4-mc-2",
       "reading": "thursday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del jueves de la semana 4",
+      "statement": "En un agente que aprende, ¿qué componente sugiere acciones que conduzcan a experiencias nuevas e informativas?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: El elemento de desempeño",
+        "Opción B: El crítico",
+        "Opción C: El generador de problemas",
+        "Opción D: El elemento de aprendizaje"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción C: El generador de problemas",
+      "difficulty_level": 5,
+      "source_quote": "The last component of the learning agent is the problem generator. It is responsible for suggesting actions that will lead to new and informative experiences."
     },
     {
       "id": "thu4-mc-3",
       "reading": "thursday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del jueves de la semana 4",
+      "statement": "¿Qué estructura usa la búsqueda en anchura para la frontera y qué nodo elige para expandir?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Una pila LIFO; elige el nodo generado más recientemente",
+        "Opción B: Una cola de prioridad por g(n); elige el de menor costo de camino",
+        "Opción C: Una cola de prioridad por h(n); elige el más cercano a la meta",
+        "Opción D: Una cola FIFO; elige el nodo sin expandir menos profundo"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción D: Una cola FIFO; elige el nodo sin expandir menos profundo",
+      "difficulty_level": 4,
+      "source_quote": "in which the shallowest unexpanded node is chosen for expansion. This is achieved very simply by using a FIFO queue for the frontier."
     },
     {
       "id": "thu4-mc-4",
       "reading": "thursday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del jueves de la semana 4",
+      "statement": "¿Cómo evalúa los nodos la búsqueda A*?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Solo con h(n), el costo estimado desde n hasta la meta",
+        "Opción B: Con f(n) = g(n) + h(n), costo hasta el nodo más costo estimado hasta la meta",
+        "Opción C: Solo con g(n), el costo del camino desde el inicio hasta n",
+        "Opción D: Con la profundidad del nodo dentro del árbol de búsqueda"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción B: Con f(n) = g(n) + h(n), costo hasta el nodo más costo estimado hasta la meta",
+      "difficulty_level": 6,
+      "source_quote": "It evaluates nodes by combining g(n), the cost to reach the node, and h(n), the cost to get from the node to the goal"
     },
     {
       "id": "thu4-mc-5",
       "reading": "thursday-week-4",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del jueves de la semana 4",
+      "statement": "¿Qué método de búsqueda no informada se prefiere cuando el espacio de búsqueda es grande y no se conoce la profundidad de la solución?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Búsqueda de profundización iterativa",
+        "Opción B: Búsqueda en anchura",
+        "Opción C: Búsqueda en profundidad",
+        "Opción D: Búsqueda de costo uniforme"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción A: Búsqueda de profundización iterativa",
+      "difficulty_level": 7,
+      "source_quote": "In general, iterative deepening is the preferred uninformed search method when the search space is large and the depth of the solution is not known."
     },
 
 
