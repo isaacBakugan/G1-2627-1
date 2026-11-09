@@ -291,141 +291,141 @@
       "id": "tue8-tf-1",
       "reading": "tuesday-week-8",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del martes de la semana 8",
+      "statement": "El capítulo define el clustering como el proceso de reconocer similitudes entre datos observados y agruparlos.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 2,
+      "source_quote": "Clustering is the activity of recognizing similarities between observed data and then associating different data together as a group."
     },
     {
       "id": "tue8-tf-2",
       "reading": "tuesday-week-8",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del martes de la semana 8",
+      "statement": "Según el capítulo, el aprendizaje supervisado se asocia con el clustering y el no supervisado con la clasificación.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 5,
+      "source_quote": "clustering and classification are sometimes described as unsupervised and supervised learning, respectively."
     },
     {
       "id": "tue8-tf-3",
       "reading": "tuesday-week-8",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del martes de la semana 8",
+      "statement": "Los algoritmos evolutivos permiten explorar simultáneamente distintas formas de modelos y distintos valores de sus parámetros.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 8,
+      "source_quote": "evolutionary algorithms can be used to search over a landscape of varying model forms and parameter values simultaneously."
     },
     {
       "id": "tue8-tf-4",
       "reading": "tuesday-week-8",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del martes de la semana 8",
+      "statement": "La estrategia tit-for-tat comienza defectando y luego imita la decisión anterior del oponente.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 4,
+      "source_quote": "which cooperates on the first move and mirrors whatever the other player does after that."
     },
     {
       "id": "tue8-tf-5",
       "reading": "tuesday-week-8",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del martes de la semana 8",
+      "statement": "En el experimento del sistema carrito-péndulo, durante los últimos 40 segundos el carrito y el péndulo oscilaron dentro de los límites de control.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 6,
+      "source_quote": "The final 40 s of the depicted time show the cart and pole oscillating within the control limits."
     },
     {
       "id": "tue8-mc-1",
       "reading": "tuesday-week-8",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del martes de la semana 8",
+      "statement": "¿Qué incorpora el criterio de información de Akaike (AIC) además de evaluar el ajuste del modelo a los datos?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "A) Una penalización por el número de parámetros libres incorporados en el modelo.",
+        "B) Una recompensa que aumenta con cada parámetro adicional.",
+        "C) Una penalización basada exclusivamente en el número total de observaciones.",
+        "D) Una medida que elimina el error de predicción antes de comparar modelos."
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "A) Una penalización por el número de parámetros libres incorporados en el modelo.",
+      "difficulty_level": 4,
+      "source_quote": "a penalty for the number of free parameters that are incorporated in a model."
     },
     {
       "id": "tue8-mc-2",
       "reading": "tuesday-week-8",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del martes de la semana 8",
+      "statement": "¿Cómo distingue el capítulo los componentes autorregresivo y de promedio móvil de un modelo ARMA?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "A) La parte autorregresiva modela el ruido adicional, mientras que la de promedio móvil depende de valores previos observados.",
+        "B) Ambas partes utilizan únicamente valores anteriores de la variable observada.",
+        "C) La parte autorregresiva relaciona valores futuros con valores previos observados, mientras que la parte de promedio móvil incorpora términos adicionales que modelan el ruido del sistema.",
+        "D) La parte autorregresiva representa entradas de control externas, mientras que la parte de promedio móvil describe exclusivamente la salida."
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "C) La parte autorregresiva relaciona valores futuros con valores previos observados, mientras que la parte de promedio móvil incorpora términos adicionales que modelan el ruido del sistema.",
+      "difficulty_level": 7,
+      "source_quote": "The autoregressive part indicates that future values of an observed variable are a function of prior values of the observed variable. The concept of the moving average comes from additional terms that model noise in the system"
     },
     {
       "id": "tue8-mc-3",
       "reading": "tuesday-week-8",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del martes de la semana 8",
+      "statement": "En el método de clustering mediante cajas o hiperrectángulos, ¿qué indica que un punto tenga un grado de pertenencia de 1.0?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "A) Que el punto está fuera de la caja, pero puede pertenecer parcialmente al grupo.",
+        "B) Que el punto se encuentra dentro de los límites de la caja y es un miembro completo del cluster.",
+        "C) Que el punto se encuentra a la misma distancia de dos cajas diferentes.",
+        "D) Que el punto se elimina antes de evaluar la agrupación."
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "B) Que el punto se encuentra dentro de los límites de la caja y es un miembro completo del cluster.",
+      "difficulty_level": 3,
+      "source_quote": "Points contained within the boundaries of the box (e.g., points A and B) are said to be complete members of that cluster, or possess membership 1.0."
     },
     {
       "id": "tue8-mc-4",
       "reading": "tuesday-week-8",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del martes de la semana 8",
+      "statement": "En el enfoque de coevolución aplicado a juegos, ¿cómo se evalúan las estrategias cuando las soluciones compiten entre sí?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "A) Se comparan siempre con una función objetivo fija e independiente del resto.",
+        "B) Se evalúan únicamente con respecto a una estrategia óptima conocida.",
+        "C) Cada estrategia se evalúa una sola vez contra datos históricos, sin actualizar el objetivo.",
+        "D) Se juzgan por qué tan bien compiten contra otras soluciones de la misma o de otra población, por lo que el objetivo puede cambiar conforme cambian los jugadores."
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "D) Se juzgan por qué tan bien compiten contra otras soluciones de la misma o de otra población, por lo que el objetivo puede cambiar conforme cambian los jugadores.",
+      "difficulty_level": 9,
+      "source_quote": "solutions are judged in terms of how well they compete against other solutions in the same or a different population. Thus, the objectives may change as the players themselves change."
     },
     {
       "id": "tue8-mc-5",
       "reading": "tuesday-week-8",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del martes de la semana 8",
+      "statement": "¿Cuál es el objetivo central del problema de control conocido como truck backer-upper?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "A) Llevar el camión desde una ubicación arbitraria hasta una posición en la que el punto medio de la parte trasera del remolque quede junto al muelle y el remolque esté perpendicular a este.",
+        "B) Mantener el tractor paralelo al remolque mientras ambos se alejan del muelle.",
+        "C) Ubicar la parte delantera del tractor junto al muelle, con el remolque formando un ángulo de 90 grados respecto al tractor.",
+        "D) Llevar el remolque a una posición arbitraria sin modificar su orientación final."
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "A) Llevar el camión desde una ubicación arbitraria hasta una posición en la que el punto medio de la parte trasera del remolque quede junto al muelle y el remolque esté perpendicular a este.",
+      "difficulty_level": 2,
+      "source_quote": "the objective of the control problem is to take the semi-trailer truck from an arbitrary starting location and move it so that the midpoint of the rear of the trailer is positioned next to the loading dock at the designated position and such that the trailer is perpendicular to the loading dock."
     },
 
 
