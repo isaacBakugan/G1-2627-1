@@ -146,141 +146,141 @@
       "id": "thu7-tf-1",
       "reading": "thursday-week-7",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del jueves de la semana 7",
+      "statement": "Según la lectura, en el problema del agente viajero con n = 10 ciudades hay 10! = 3.628.800 recorridos posibles distintos entre los cuales escoger.",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 6,
+      "source_quote": "there are 181,440 different paths to choose from."
     },
     {
       "id": "thu7-tf-2",
       "reading": "thursday-week-7",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del jueves de la semana 7",
+      "statement": "En la optimización de caja negra (black box) la función se trata como una caja que responde con un número cada vez que se le introduce un número.",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
       "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "source_quote": "that responded with a number any time we put a number in the box."
     },
     {
       "id": "thu7-tf-3",
       "reading": "thursday-week-7",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del jueves de la semana 7",
+      "statement": "Según la lectura, la recombinación mediante cruce o mezcla (blending) no puede extenderse a más de dos padres",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 3,
+      "source_quote": "Recombination, in terms of both crossover and blending, can be extended to more than two parents"
     },
     {
       "id": "thu7-tf-4",
       "reading": "thursday-week-7",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del jueves de la semana 7",
+      "statement": "Si el paisaje de la función es discontinuo o no es suave, los enfoques basados en gradiente pueden no ser aplicables porque quizá no sea posible calcular los gradientes",
       "options": [
         "Verdadero",
         "Falso"
       ],
       "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "difficulty_level": 4,
+      "source_quote": "If the landscape is discontinuous and/or not smooth, then gradient-based approaches may be inapplicable"
     },
     {
       "id": "thu7-tf-5",
       "reading": "thursday-week-7",
       "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del jueves de la semana 7",
+      "statement": "Según la lectura, si se sustituye la mutación por el cruce, se sigue garantizando la convergencia con probabilidad 1 hacia un óptimo global",
       "options": [
         "Verdadero",
         "Falso"
       ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Falso",
+      "difficulty_level": 8,
+      "source_quote": "if crossover is substituted for mutation, then the result does not guarantee convergence to a global optimum"
     },
     {
       "id": "thu7-mc-1",
       "reading": "thursday-week-7",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del jueves de la semana 7",
+      "statement": "¿Cómo se llama el problema en el que, dada una colección de herramientas con cierto peso, se busca la combinación de mayor peso total que quepa en una bolsa de capacidad limitada",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Problema del agente viajero",
+        "Opción B: Problema de Rastrigin",
+        "Opción C: Problema de la mochila (knapsack)",
+        "Opción D: Problema de la caja negra"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción C: Problema de la mochila (knapsack)",
+      "difficulty_level": 3,
+      "source_quote": "This is called a knapsack problem"
     },
     {
       "id": "thu7-mc-2",
       "reading": "thursday-week-7",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del jueves de la semana 7",
+      "statement": "¿Qué ocurre en la selección de tipo plus, notada (μ+λ), según la lectura",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Todos los padres y descendientes compiten para ser los padres de la siguiente generación",
+        "Opción B: Solo los descendientes pueden sobrevivir y los padres mueren en cada generación",
+        "Opción C: Los padres se escogen al azar sin considerar su aptitud",
+        "Opción D: Se conserva únicamente al mejor individuo y se descartan todos los demás"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción A: Todos los padres y descendientes compiten para ser los padres de la siguiente generación",
+      "difficulty_level": 4,
+      "source_quote": "all parents and offspring compete to be parents for the next generation"
     },
     {
       "id": "thu7-mc-3",
       "reading": "thursday-week-7",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del jueves de la semana 7",
+      "statement": "¿Qué limitación tiene la selección proporcional (o de ruleta) según la lectura?",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Solo funciona con poblaciones de menos de diez individuos",
+        "Opción B: Solo puede aplicarse a representaciones binarias",
+        "Opción C: Siempre converge más rápido que la selección por torneo",
+        "Opción D: Está restringida a problemas de maximización con puntajes de aptitud estrictamente positivos"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción D: Está restringida a problemas de maximización con puntajes de aptitud estrictamente positivos",
+      "difficulty_level": 5,
+      "source_quote": "the procedure is constrained to maximization problems on strictly positive fitness scores"
     },
     {
       "id": "thu7-mc-4",
       "reading": "thursday-week-7",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del jueves de la semana 7",
+      "statement": "Según los resultados citados de Bäck, ¿cuál es el orden de la fuerza de selección, de la más débil a la más fuerte",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Torneo, proporcional, ranking lineal, plus/comma",
+        "Opción B: Plus/comma, torneo, ranking lineal, proporcional",
+        "Opción C: Ranking lineal, proporcional, plus/comma, torneo",
+        "Opción D: Proporcional, ranking lineal, torneo, plus/comma"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción D: Proporcional, ranking lineal, torneo, plus/comma",
+      "difficulty_level": 7,
+      "source_quote": "the order of selection strength from weakest to strongest is proportional selection, linear ranking selection, tournament selection, and then plus/comma selection"
     },
     {
       "id": "thu7-mc-5",
       "reading": "thursday-week-7",
       "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del jueves de la semana 7",
+      "statement": "Según el método empírico de Schwefel para la regla 1/5, si la tasa de éxito de las mutaciones es menor a 0.2, ¿qué ocurre con el tamaño de paso de la mutación gaussiana",
       "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
+        "Opción A: Se aumenta para explorar más lejos del padre",
+        "Opción B: Se reduce (se multiplica por 0.85), de modo que los pasos se hacen más pequeños",
+        "Opción C: Se mantiene fijo y se aumenta el tamaño de la población",
+        "Opción D: Se reemplaza la mutación gaussiana por un cruce uniforme"
       ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
+      "correct_option": "Opción B: Se reduce (se multiplica por 0.85), de modo que los pasos se hacen más pequeños",
+      "difficulty_level": 8,
+      "source_quote": "When the success rate is too low (< 0.2), the step sizes will become smaller"
     },
     {
       "id": "tue8-tf-1",
