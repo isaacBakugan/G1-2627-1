@@ -1,5 +1,5 @@
 {
-  "team": "",
+  "team": "G1",
   "assignment": "corte-preguntas-3",
   "questions": [
     {
@@ -282,6 +282,11 @@
       "difficulty_level": 8,
       "source_quote": "When the success rate is too low (< 0.2), the step sizes will become smaller"
     },
+
+
+
+
+
     {
       "id": "tue8-tf-1",
       "reading": "tuesday-week-8",
@@ -422,145 +427,159 @@
       "difficulty_level": 1,
       "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
     },
-    {
-      "id": "thu8-tf-1",
-      "reading": "thursday-week-8",
-      "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #1 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Verdadero",
-        "Falso"
-      ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
-    {
-      "id": "thu8-tf-2",
-      "reading": "thursday-week-8",
-      "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #2 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Verdadero",
-        "Falso"
-      ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
-    {
-      "id": "thu8-tf-3",
-      "reading": "thursday-week-8",
-      "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #3 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Verdadero",
-        "Falso"
-      ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
-    {
-      "id": "thu8-tf-4",
-      "reading": "thursday-week-8",
-      "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #4 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Verdadero",
-        "Falso"
-      ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
-    {
-      "id": "thu8-tf-5",
-      "reading": "thursday-week-8",
-      "type": "true_false",
-      "statement": "PONGAN AQUÍ SU PREGUNTA VERDADERO/FALSO #5 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Verdadero",
-        "Falso"
-      ],
-      "correct_option": "Verdadero",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
-    {
-      "id": "thu8-mc-1",
-      "reading": "thursday-week-8",
-      "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #1 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
-      ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
-    {
-      "id": "thu8-mc-2",
-      "reading": "thursday-week-8",
-      "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #2 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
-      ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
-    {
-      "id": "thu8-mc-3",
-      "reading": "thursday-week-8",
-      "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #3 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
-      ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
-    {
-      "id": "thu8-mc-4",
-      "reading": "thursday-week-8",
-      "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #4 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
-      ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    },
-    {
-      "id": "thu8-mc-5",
-      "reading": "thursday-week-8",
-      "type": "multiple_choice",
-      "statement": "PONGAN AQUÍ SU PREGUNTA DE SELECCIÓN SIMPLE #5 sobre la lectura del jueves de la semana 8",
-      "options": [
-        "Opción A (edítenla)",
-        "Opción B (edítenla)",
-        "Opción C (edítenla)",
-        "Opción D (edítenla)"
-      ],
-      "correct_option": "Opción A (edítenla)",
-      "difficulty_level": 1,
-      "source_quote": "PONGAN AQUÍ LA CITA TEXTUAL DE LA LECTURA que justifica la respuesta correcta"
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "thu8-tf-1",
+    "reading": "thursday-week-8",
+    "type": "true_false",
+    "statement": "En la optimización por enjambre de partículas, cada partícula conserva en memoria la ubicación que produjo el mejor resultado para la función objetivo.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_option": "Verdadero",
+    "difficulty_level": 2,
+    "source_quote": "Each particle is given a memory. It remembers the location that has yielded the best result from the objective function."
+  },
+  {
+    "id": "thu8-tf-2",
+    "reading": "thursday-week-8",
+    "type": "true_false",
+    "statement": "En el algoritmo de optimización por enjambre de partículas, el vecindario de cada partícula debe incluir obligatoriamente a todas las partículas de la población.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_option": "Falso",
+    "difficulty_level": 4,
+    "source_quote": "With starlings, the neighborhood is believed to be seven birds, but in PSO the neighborhood can be small, like a particle and its two closest neighbors, or it can expand to be the entire collection of particles."
+  },
+  {
+    "id": "thu8-tf-3",
+    "reading": "thursday-week-8",
+    "type": "true_false",
+    "statement": "En evolución diferencial, la mutación utiliza la diferencia entre dos individuos distintos para modificar una solución de la población.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_option": "Verdadero",
+    "difficulty_level": 8,
+    "source_quote": "x0i = x1i + a(x2i − x3i) where a is a scalar value between [0, 2] called a differential weight."
+  },
+  {
+    "id": "thu8-tf-4",
+    "reading": "thursday-week-8",
+    "type": "true_false",
+    "statement": "En la optimización por colonias de hormigas, la cantidad de feromona de un trayecto aumenta continuamente con el tiempo, incluso cuando las hormigas dejan de recorrerlo.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_option": "Falso",
+    "difficulty_level": 6,
+    "source_quote": "The pheromone evaporates over time, so once food sources are exhausted, the ants don’t continue to travel to an “empty refrigerator” forever."
+  },
+  {
+    "id": "thu8-tf-5",
+    "reading": "thursday-week-8",
+    "type": "true_false",
+    "statement": "En un conjunto de Pareto, es posible mejorar cualquier objetivo sin reducir el rendimiento respecto a los demás objetivos.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_option": "Falso",
+    "difficulty_level": 7,
+    "source_quote": "for any solution in the set, no objective can be improved without reducing performance with respect to a different objective."
+  },
+  {
+    "id": "thu8-mc-1",
+    "reading": "thursday-week-8",
+    "type": "multiple_choice",
+    "statement": "¿Qué elementos influyen en la actualización de la velocidad de una partícula en el algoritmo PSO?",
+    "options": [
+      "A) Únicamente la posición actual de la partícula y la posición inicial de la población.",
+      "B) La velocidad actual, la mejor posición encontrada por la propia partícula y la mejor posición encontrada en su vecindario.",
+      "C) Solamente la mejor posición global y la distancia entre las partículas.",
+      "D) La posición actual, el número de generaciones y la función de penalización del algoritmo."
+    ],
+    "correct_option": "B) La velocidad actual, la mejor posición encontrada por la propia partícula y la mejor posición encontrada en su vecindario.",
+    "difficulty_level": 3,
+    "source_quote": "Each particle’s new velocity is a function of (i) its current velocity, (ii) the vector that points to the particle’s own best location, and (iii) the vector that points to the best location of the particles in its neighborhood."
+  },
+  {
+    "id": "thu8-mc-2",
+    "reading": "thursday-week-8",
+    "type": "multiple_choice",
+    "statement": "En el algoritmo de evolución diferencial, ¿qué sucede cuando una nueva versión de una solución obtiene un resultado peor que la versión original?",
+    "options": [
+      "A) La nueva solución reemplaza obligatoriamente a la original para mantener la diversidad.",
+      "B) Ambas soluciones se eliminan y se generan dos individuos aleatorios.",
+      "C) La solución original se conserva para la siguiente generación.",
+      "D) La nueva solución se conserva y la original pasa a formar parte de una población secundaria."
+    ],
+    "correct_option": "C) La solución original se conserva para la siguiente generación.",
+    "difficulty_level": 5,
+    "source_quote": "if the new version of x0 is better than the original, it replaces the original in the next generation; otherwise, the original x0 is retained for the next generation."
+  },
+  {
+    "id": "thu8-mc-3",
+    "reading": "thursday-week-8",
+    "type": "multiple_choice",
+    "statement": "En la optimización por colonias de hormigas, ¿cómo influyen la feromona y la distancia en la probabilidad de elegir una ciudad?",
+    "options": [
+      "A) La probabilidad depende exclusivamente de la distancia, sin considerar la feromona.",
+      "B) Una mayor distancia y una menor cantidad de feromona aumentan la probabilidad de elegir una ciudad.",
+      "C) La probabilidad es directamente proporcional a la distancia y a la evaporación de la feromona.",
+      "D) Una mayor cantidad de feromona aumenta la probabilidad de elegir una ciudad, mientras que una mayor distancia la disminuye."
+    ],
+    "correct_option": "D) Una mayor cantidad de feromona aumenta la probabilidad de elegir una ciudad, mientras que una mayor distancia la disminuye.",
+    "difficulty_level": 6,
+    "source_quote": "The higher the value of ph(i,j), the higher the likelihood of traveling to city j. Also, the probability is inversely related to the distance between the current city i and the new city j."
+  },
+  {
+    "id": "thu8-mc-4",
+    "reading": "thursday-week-8",
+    "type": "multiple_choice",
+    "statement": "¿Qué característica distingue a la computación evolutiva interactiva cuando resulta difícil definir matemáticamente una función de aptitud?",
+    "options": [
+      "A) Utiliza el juicio humano como función de aptitud para orientar la evolución de las soluciones.",
+      "B) Elimina la evaluación de las soluciones y conserva únicamente las que presentan mayor diversidad.",
+      "C) Reemplaza la selección evolutiva por una función matemática basada exclusivamente en errores numéricos.",
+      "D) Utiliza una población fija en la que las soluciones no pueden modificarse después de su evaluación."
+    ],
+    "correct_option": "A) Utiliza el juicio humano como función de aptitud para orientar la evolución de las soluciones.",
+    "difficulty_level": 8,
+    "source_quote": "In such cases, it’s possible to use a human’s judgment as the fitness function and guide evolution to solutions that fit the individual’s judgment."
+  },
+  {
+    "id": "thu8-mc-5",
+    "reading": "thursday-week-8",
+    "type": "multiple_choice",
+    "statement": "En un problema de optimización multiobjetivo, ¿cuándo se considera que una solución domina a otra?",
+    "options": [
+      "A) Cuando presenta el mejor resultado en un objetivo, independientemente de su rendimiento en los demás.",
+      "B) Cuando es igual o mejor en todos los criterios medibles y estrictamente mejor en al menos uno.",
+      "C) Cuando obtiene exactamente el mismo valor en todos los objetivos que las demás soluciones.",
+      "D) Cuando presenta un mejor valor en la función de utilidad combinada, aunque sea inferior en todos los criterios individuales."
+    ],
+    "correct_option": "B) Cuando es igual o mejor en todos los criterios medibles y estrictamente mejor en al menos uno.",
+    "difficulty_level": 9,
+    "source_quote": "A solution dominates another when it is equally good or better in all measurable criteria, but better in at least one criterion."
+  }
+
+
   ]
 }
